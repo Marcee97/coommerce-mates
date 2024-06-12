@@ -1,0 +1,105 @@
+.section-home{
+   .menu-desplegable{
+    outline: 1px solid rgb(56, 55, 55);
+    position: absolute;
+    z-index: 21;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background: #000000fa;
+    display: flex;
+    justify-content: center;
+    padding: 1em 2em;
+    transform: translateX(103%);
+   transition: 1s linear;
+   
+   
+    ul{
+        list-style: none;
+    }
+   }
+
+   .desplegado{
+    transform: translateX(20%);
+
+   }
+.contenido-home{
+    font-size: 1.2em;
+    height: 100vh;
+    
+    .texto-home{
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+    }
+    .productos-home{
+        height: 100%;
+        width: 100%;
+        background-color: #0f0f0fc4;
+        
+        .botonera-home{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-items: center;
+            padding: .3em;
+            button{
+                border: none;
+                width: 100%;
+                height: 25vh;
+                box-shadow: 3px 3px 3px #000;
+            }
+            .button-mates{
+               background-image:linear-gradient(to top, #000000c5 , #0000005b 15%, #00000059, #0000006c 90%), url(https://i.pinimg.com/564x/60/07/5c/60075c6324bc585dd20bba9802e8e2e9.jpg);
+               background-size:cover;
+               background-repeat: no-repeat;
+               background-position: 35% 70%;
+               border-radius: 5px;
+               font-weight: bold;
+               font-size: 2em;
+               text-shadow: 3px 3px 3px #000;
+               
+               
+
+            }
+            .button-accesorios{
+                 background-image:linear-gradient(to top, #000000c5 , #0000005b 15%, #00000059, #0000006c 90%), url(https://i.pinimg.com/236x/55/55/8f/55558f8b0c08886d43396ffa95a236ea.jpg);
+               background-size:cover;
+               background-repeat: no-repeat;
+               background-position: 25% 80%;
+               border-radius: 5px;
+               font-weight: bold;
+               font-size: 2em;
+               text-shadow: 3px 3px 3px #000;
+               color: #fff;
+            }
+            .button-yerba{
+                background-image:linear-gradient(to top, #000000c5 , #0000005b 15%, #00000059, #0000006c 90%), url(https://i.pinimg.com/236x/ef/58/a6/ef58a62b2643167fe6d144d2480c41ce.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-position: 25% 80%;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 2em;
+                text-shadow: 3px 3px 3px #000;
+                color: #fff;
+            }
+            .link-mates{
+                text-decoration: none;
+                color: #fff;
+                padding: 35px ;
+               }
+
+        }
+    }
+
+}
+
+
+
+    
+}
+
