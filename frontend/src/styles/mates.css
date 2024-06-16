@@ -1,0 +1,114 @@
+.section-mates {
+  padding: 0.9em;
+  background: linear-gradient(
+      217deg,
+      rgba(22, 22, 22, 0.8),
+      rgba(44, 43, 43, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(32, 32, 32, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(2, 2, 29, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  .cont-mates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    .modelos-mates {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 0.5em;
+      .buttons-navegacion-modelos {
+        background-color: rgba(27, 27, 27, 0.842);
+        padding: 0.1em 1.9em;
+        font-size: 0.8em;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    }
+    .contenedor-de-productos {
+      background-color: rgba(128, 126, 126, 0.692);
+      backdrop-filter: blur(9px);
+outline: 1px solid rgb(32, 32, 32);
+
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: 2px 4px 9px 3px #000;
+      .nombre-producto {
+        font-size: 0.9em;
+        border-top: 1px solid #fff;
+        padding-top: .5em;
+      }
+      .disponibilidad-producto {
+        color: #00ff0d;
+      }
+      .precio-producto {
+        font-size: 1.8em;
+      }
+      .img-producto {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+    }
+    
+  }
+
+  .contenedor-de-productos-modal{
+    position: fixed;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    width: 100%;
+    padding: .9em;
+    height: 100%;
+    background: linear-gradient(#0c0b0b 50%, #000000f1 60%);
+    backdrop-filter: blur(15px);
+    z-index: 100;
+    overflow-y: auto;
+    .btn-cerrar-modal{
+        font-size: 1em;
+    padding: .4em;
+border: none;
+border-radius: 5px;
+background-color: rgb(25, 27, 25);
+color: #fff;
+    }
+    img{
+        width: 100%;
+        border-radius:5px ;
+    }
+    
+    .texto-producto{
+        border-top:1px solid #fff ;
+
+    }
+    .disponibilidad-producto{
+        color: rgb(0, 255, 13);
+    
+    }
+    
+    .btn-comprar-precio{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+
+        .precio-producto-modal{
+            font-size: 1.8em;
+        }
+    .button-modal-mates{
+        font-size: 1.1em;
+    padding: .4em;
+border: none;
+border-radius: 5px;
+background-color: rgb(25, 27, 25);
+color: #fff;
+
+}
+}
+  }
+}
