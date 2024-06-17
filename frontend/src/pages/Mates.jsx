@@ -5,10 +5,14 @@ import axios from "axios";
 
 
 
-
 export const Mates = () => {
   
 
+  const baseURL = import.meta.env.VITE_BACKEND || 'http://localhost:3000'
+
+  const client = axios.create({
+      baseURL: baseURL
+  })
 
 
   const scroll = ()=> {
@@ -37,8 +41,9 @@ const [loading, setLoading] = useState(true)
 
 useEffect(()=> {
 
-  axios.get('http://localhost:3000/mates')
+  client.get(`${baseURL}/mates`)
   .then(response => {
+    console.log(response.data)
     setMatesDb(response.data)
     setLoading(false)
 
@@ -79,10 +84,6 @@ if(loading) return <p>Loading</p>
   ))
 }
 
-       
-        
-        
-        
       </div>
 
       {modalOpen && itemSelected && (

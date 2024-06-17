@@ -1,14 +1,15 @@
 import express from "express";
 import router from "./routes/app.routes.js";
 import cors from "cors";
-
+import { PORT } from "./config.js";
+import { ORIGIN } from "./config.js";
 const app = express()
 
-app.listen(3000)
-console.log('http://localhost:3000')
+app.listen(PORT)
+console.log(`http://localhost:${PORT}`)
 
 app.use(cors({
-    origin:'http://localhost:5173'
+    origin:ORIGIN
 }))
 app.use(router)
 
