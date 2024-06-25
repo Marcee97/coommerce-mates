@@ -60,22 +60,7 @@ const clickClose = ()=> {
           </article>
         ))}
 
-        {/*camionero.map((items, index) => (
-          <article
-            key={index}
-            className="contenedor-de-productos section-accesorios-bombillas"
-            onClick={() => clickOpen(items)}
-          >
-            <img
-              src={items.imagen}
-              alt="Foto producto"
-              className="img-producto"
-            />
-            <p className="nombre-producto">{items.nombre}</p>
-            <p className="disponibilidad-producto">{items.disponibilidad}</p>
-            <strong className="precio-producto">${items.precio}</strong>
-          </article>
-        ))*/}
+       
       </div>
 
       {openModal && itemSelected && (

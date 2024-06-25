@@ -41,7 +41,7 @@ const [loading, setLoading] = useState(true)
 
 useEffect(()=> {
 
-  client.get(`${baseURL}/mates`)
+  client.get("/mates")
   .then(response => {
     console.log(response.data)
     setMatesDb(response.data)
