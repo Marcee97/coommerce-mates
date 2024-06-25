@@ -9,7 +9,7 @@ app.listen(PORT)
 console.log(`http://localhost:${PORT}`)
 
 app.use(cors({
-    origin:ORIGIN
+    ORIGIN
 }))
 app.use(router)
 
